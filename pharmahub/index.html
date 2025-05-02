@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaHub - Pharmacy Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-pills"></i>
+            <span>PharmaHub</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#resources"><i class="fas fa-book"></i> Resources</a></li>
+            <li><a href="#quizzes"><i class="fas fa-question-circle"></i> Quizzes</a></li>
+            <li><a href="#flashcards"><i class="fas fa-layer-group"></i> Flashcards</a></li>
+            <li><a href="#tools"><i class="fas fa-calculator"></i> Tools</a></li>
+            <li><a href="#community"><i class="fas fa-users"></i> Community</a></li>
+        </ul>
+        <div class="user-actions">
+            <button class="btn btn-login">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+            <button class="btn btn-primary btn-signup">
+                <i class="fas fa-user-plus"></i> Sign Up
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master Pharmacy <span class="highlight">Smarter</span>, Not Harder</h1>
+            <p class="subtitle">Access premium study materials, interactive tools, and connect with peers in our comprehensive learning platform</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search drugs, topics, quizzes...">
+                    <button class="btn btn-primary search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket"></i> Get Started
+                </button>
+                <button class="btn btn-outline btn-lg">
+                    <i class="fas fa-video"></i> Watch Demo
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/pharmacy-hero.png" alt="Pharmacy Illustration" class="hero-img">
+            <div class="floating-icons">
+                <div class="icon-circle"><i class="fas fa-book"></i></div>
+                <div class="icon-circle"><i class="fas fa-flask"></i></div>
+                <div class="icon-circle"><i class="fas fa-calculator"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose <span class="highlight">PharmaHub</span>?</h2>
+        <p class="section-subtitle">Everything you need to excel in your pharmacy studies</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card card-hover">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Comprehensive Resources</h3>
+                <p>Organized by modules with downloadable PDFs, videos, and presentations</p>
+                <button class="btn btn-outline btn-sm">
+                    Explore <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="feature-card card-hover">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Interactive Quizzes</h3>
+                <p>Test your knowledge with instant feedback and detailed explanations</p>
+                <button class="btn btn-outline btn-sm">
+                    Try Now <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="feature-card card-hover">
+                <div class="feature-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3>Smart Calculators</h3>
+                <p>Essential pharmacy tools like dosage calculators and BMI calculators</p>
+                <button class="btn btn-outline btn-sm">
+                    Calculate <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="feature-card card-hover">
+                <div class="feature-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Community Support</h3>
+                <p>Connect with peers, ask questions, and share knowledge</p>
+                <button class="btn btn-outline btn-sm">
+                    Join <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Resources Section -->
+    <section id="resources" class="resources">
+        <div class="section-header">
+            <h2 class="section-title">Study <span class="highlight">Resources</span></h2>
+            <p class="section-subtitle">Organized by subject for efficient learning</p>
+            <div class="section-actions">
+                <button class="btn btn-outline">
+                    <i class="fas fa-filter"></i> Filter
+                </button>
+                <button class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download All
+                </button>
+            </div>
+        </div>
+        
+        <div class="module-tabs">
+            <button class="tab-btn active" data-module="anatomy">
+                <i class="fas fa-brain"></i> Anatomy
+            </button>
+            <button class="tab-btn" data-module="biochemistry">
+                <i class="fas fa-dna"></i> Biochemistry
+            </button>
+            <button class="tab-btn" data-module="microbiology">
+                <i class="fas fa-virus"></i> Microbiology
+            </button>
+            <button class="tab-btn" data-module="pharmaceutical-chemistry">
+                <i class="fas fa-flask"></i> Pharma Chemistry
+            </button>
+            <button class="tab-btn" data-module="pharmaceutics">
+                <i class="fas fa-mortar-pestle"></i> Pharmaceutics
+            </button>
+            <button class="tab-btn" data-module="pharmacology">
+                <i class="fas fa-pills"></i> Pharmacology
+            </button>
+        </div>
+        
+        <div class="resource-grid">
+            <!-- Anatomy Resources -->
+            <div class="resource-card card-hover">
+                <div class="resource-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="resource-content">
+                    <h4>Human Anatomy Fundamentals</h4>
+                    <p class="resource-meta">
+                        <span><i class="fas fa-file-alt"></i> 45 pages</span>
+                        <span><i class="fas fa-star"></i> 4.8 (120)</span>
+                    </p>
+                    <p class="resource-desc">Complete guide to human anatomy with detailed illustrations</p>
+                </div>
+                <div class="resource-actions">
+                    <button class="btn btn-icon">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <button class="btn btn-primary btn-download">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+            
+            <!-- More resource cards would go here -->
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quizzes" class="quizzes">
+        <div class="section-header">
+            <h2 class="section-title">Test Your <span class="highlight">Knowledge</span></h2>
+            <p class="section-subtitle">Practice with our interactive quizzes</p>
+        </div>
+        
+        <div class="quiz-container card-hover">
+            <div class="quiz-header">
+                <div class="quiz-badge">
+                    <i class="fas fa-trophy"></i> Pharmacology
+                </div>
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                    <span>Question <span id="current-question">1</span> of <span id="total-questions">10</span></span>
+                </div>
+            </div>
+            
+            <div class="quiz-question">
+                <h3 id="question-text">Which of the following is a beta-blocker?</h3>
+                <div class="quiz-options">
+                    <label class="option-card">
+                        <input type="radio" name="quiz-option">
+                        <div class="option-content">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Lisinopril</span>
+                        </div>
+                    </label>
+                    <label class="option-card correct-answer">
+                        <input type="radio" name="quiz-option">
+                        <div class="option-content">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Metoprolol</span>
+                        </div>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="quiz-option">
+                        <div class="option-content">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">Amlodipine</span>
+                        </div>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="quiz-option">
+                        <div class="option-content">
+                            <span class="option-letter">D</span>
+                            <span class="option-text">Hydrochlorothiazide</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="quiz-feedback">
+                <div class="feedback-header">
+                    <div class="feedback-result correct">
+                        <i class="fas fa-check-circle"></i> Correct!
+                    </div>
+                    <div class="feedback-score">
+                        Score: <span>2</span>/10
+                    </div>
+                </div>
+                <div class="feedback-explanation">
+                    <h4><i class="fas fa-lightbulb"></i> Explanation:</h4>
+                    <p>Metoprolol is a selective β1 receptor blocker used to treat high blood pressure and heart failure. It works by blocking the effects of adrenaline on β1 receptors in the heart.</p>
+                </div>
+            </div>
+            
+            <div class="quiz-actions">
+                <button class="btn btn-outline">
+                    <i class="fas fa-flag"></i> Flag Question
+                </button>
+                <button class="btn btn-primary">
+                    Next Question <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flashcards Section -->
+    <section id="flashcards" class="flashcards">
+        <div class="section-header">
+            <h2 class="section-title">Interactive <span class="highlight">Flashcards</span></h2>
+            <p class="section-subtitle">Master key concepts with our spaced repetition system</p>
+        </div>
+        
+        <div class="flashcard-container">
+            <div class="flashcard card-hover">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <div class="flashcard-category">
+                            <i class="fas fa-pills"></i> Pharmacology
+                        </div>
+                        <h3>What is the mechanism of action of ACE inhibitors?</h3>
+                        <div class="flashcard-hint">
+                            <i class="fas fa-lightbulb"></i> Hint: Think about angiotensin
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        <div class="flashcard-answer">
+                            <h4>Answer:</h4>
+                            <p>ACE inhibitors block the angiotensin-converting enzyme, preventing the conversion of angiotensin I to angiotensin II, leading to vasodilation and reduced blood pressure.</p>
+                        </div>
+                        <div class="flashcard-mnemonics">
+                            <h4><i class="fas fa-brain"></i> Mnemonic:</h4>
+                            <p>"ACE blocks the race" - stops the angiotensin conversion race</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flashcard-actions">
+                <button class="btn btn-danger">
+                    <i class="fas fa-times"></i> Hard
+                </button>
+                <button class="btn btn-success">
+                    <i class="fas fa-check"></i> Easy
+                </button>
+                <button class="btn btn-primary">
+                    Next Card <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="flashcard-progress">
+                <div class="progress-text">
+                    <span>Deck Progress:</span>
+                    <span>12/50 cards</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 24%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="section-header">
+            <h2 class="section-title">Pharmacy <span class="highlight">Calculators</span></h2>
+            <p class="section-subtitle">Essential tools for dosage calculations and more</p>
+        </div>
+        
+        <div class="tool-tabs">
+            <button class="tab-btn active" data-tool="pediatric">
+                <i class="fas fa-baby"></i> Pediatric Dose
+            </button>
+            <button class="tab-btn" data-tool="bmi">
+                <i class="fas fa-weight"></i> BMI Calculator
+            </button>
+            <button class="tab-btn" data-tool="drip">
+                <i class="fas fa-tint"></i> Drip Rate
+            </button>
+            <button class="tab-btn" data-tool="creatinine">
+                <i class="fas fa-vial"></i> Creatinine Clearance
+            </button>
+        </div>
+        
+        <div class="tool-container card-hover">
+            <div class="tool-content active" id="pediatric">
+                <div class="tool-header">
+                    <h3><i class="fas fa-baby"></i> Pediatric Dosage Calculator</h3>
+                    <p>Calculate appropriate medication doses for children based on weight</p>
+                </div>
+                
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="weight">
+                            <i class="fas fa-weight-hanging"></i> Weight (kg)
+                        </label>
+                        <div class="input-with-unit">
+                            <input type="number" id="weight" placeholder="Enter weight">
+                            <span class="unit">kg</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dose-per-kg">
+                            <i class="fas fa-prescription-bottle-alt"></i> Dose per kg
+                        </label>
+                        <div class="input-with-unit">
+                            <input type="number" id="dose-per-kg" placeholder="Enter dose">
+                            <span class="unit">mg/kg</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block calculate-btn">
+                        <i class="fas fa-calculator"></i> Calculate Dose
+                    </button>
+                    
+                    <div class="calculator-result">
+                        <div class="result-header">
+                            <i class="fas fa-prescription"></i> Result
+                        </div>
+                        <div class="result-value">
+                            Total dose: <span id="total-dose">0</span> mg
+                        </div>
+                        <div class="result-note">
+                            <i class="fas fa-info-circle"></i> Always verify with standard dosing references
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other calculators would go here -->
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="section-header">
+            <h2 class="section-title">Pharmacy <span class="highlight">Community</span></h2>
+            <p class="section-subtitle">Connect with peers and experts</p>
+        </div>
+        
+        <div class="community-container">
+            <div class="forum-container card-hover">
+                <div class="forum-header">
+                    <h3><i class="fas fa-comments"></i> Recent Discussions</h3>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i> New Question
+                    </button>
+                </div>
+                
+                <div class="forum-questions">
+                    <div class="question-card">
+                        <div class="question-header">
+                            <div class="question-title">
+                                <h4>How to calculate creatinine clearance?</h4>
+                                <div class="question-tags">
+                                    <span class="tag"><i class="fas fa-tag"></i> Pharmacology</span>
+                                    <span class="tag"><i class="fas fa-tag"></i> Calculations</span>
+                                </div>
+                            </div>
+                            <div class="question-meta">
+                                <span><i class="fas fa-user"></i> Student123</span>
+                                <span><i class="fas fa-clock"></i> 2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="question-content">
+                            <p>I'm confused about the different formulas for calculating creatinine clearance. When should I use Cockcroft-Gault vs MDRD?</p>
+                        </div>
+                        <div class="question-footer">
+                            <div class="question-stats">
+                                <span><i class="fas fa-comment"></i> 5 answers</span>
+                                <span><i class="fas fa-eye"></i> 42 views</span>
+                            </div>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-comment-dots"></i> Respond
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- More question cards would go here -->
+                </div>
+            </div>
+            
+            <div class="ask-question-container card-hover">
+                <div class="ask-header">
+                    <h3><i class="fas fa-question-circle"></i> Ask a Question</h3>
+                    <p>Get help from the community</p>
+                </div>
+                
+                <div class="ask-form">
+                    <div class="form-group">
+                        <label for="question-title">Question Title</label>
+                        <input type="text" id="question-title" placeholder="Be specific with your question">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question-details">Details</label>
+                        <textarea id="question-details" placeholder="Provide details about what you're asking"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question-topic">Topic</label>
+                        <select id="question-topic">
+                            <option>Select a topic</option>
+                            <option>Pharmacology</option>
+                            <option>Pharmaceutics</option>
+                            <option>Calculations</option>
+                            <option>Clinical Pharmacy</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Post Question
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section class="progress">
+        <div class="section-header">
+            <h2 class="section-title">Your Learning <span class="highlight">Progress</span></h2>
+            <p class="section-subtitle">Track your achievements and growth</p>
+        </div>
+        
+        <div class="progress-container card-hover">
+            <div class="progress-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>Resources Studied</h4>
+                        <div class="stat-value">24</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 48%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>Quizzes Completed</h4>
+                        <div class="stat-value">15</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-flash"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>Flashcards Mastered</h4>
+                        <div class="stat-value">87</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 58%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificate-section">
+                <div class="certificate-header">
+                    <h3><i class="fas fa-certificate"></i> Earned Certificates</h3>
+                    <p>Download your achievement certificates</p>
+                </div>
+                
+                <div class="certificate-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Pharmacology Basics</h4>
+                        <p>Completed 10 quizzes with 85% average</p>
+                        <button class="btn btn-outline btn-block">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    
+                    <!-- More certificate cards would go here -->
+                </div>
+                
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Generate New Certificate
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-pills"></i>
+                    <span>PharmaHub</span>
+                </div>
+                <p>Your complete pharmacy learning platform</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#resources"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                    <li><a href="#quizzes"><i class="fas fa-chevron-right"></i> Quizzes</a></li>
+                    <li><a href="#tools"><i class="fas fa-chevron-right"></i> Tools</a></li>
+                    <li><a href="#community"><i class="fas fa-chevron-right"></i> Community</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Documentation</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Tutorials</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Support</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get updates on new features and resources</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 PharmaHub. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
